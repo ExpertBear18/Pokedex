@@ -1,0 +1,17 @@
+.select__type {
+    font-size: 20px;
+    padding-left: 15px;
+    border: 1px solid #D3D3D3;
+    box-shadow: -11px 12px 11px -12px;
+    height: 45px;
+    width: 250px;
+}
+
+@media (max-width: 520px) {
+    .select__type {
+        font-size: 13px;
+        padding-left: 10px;
+        height: 45px;
+        width: 170px;
+    }
+}

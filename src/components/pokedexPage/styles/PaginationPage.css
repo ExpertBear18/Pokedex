@@ -1,0 +1,44 @@
+.disabled {
+    display: none;
+  }
+
+  .pagination__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1em;
+  }
+
+  .pagination__p {
+    font-size: 1.3em;
+    border-radius: 0.2em;
+    padding: 0.6em 0.9em;
+    cursor: pointer;
+  }
+
+  .pagination__p.active {
+    background-color: rgb(223, 31, 31);
+    color: white;
+  }
+
+  .icon__page {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgb(223, 31, 31);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+  }
+
+  @media (max-width: 600px) {
+    .pagination__p {
+      font-size: 1em;
+      padding: 0.4em 0.6em;
+    }
+
+    .icon__page {
+      font-size: 1em;
+      padding: 0.5em;
+    }
+  }

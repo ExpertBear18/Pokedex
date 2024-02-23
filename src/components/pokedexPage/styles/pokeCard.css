@@ -1,0 +1,339 @@
+.poke__card {
+    position: relative;
+    background-color: white;
+    border: 5px solid;
+    color: black;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.poke__card:hover {
+    transform: scale(1.05);
+}
+
+.poke__card div {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+.poke__card figure {
+    position: relative;
+    width: 150px;
+    z-index: 10;
+}
+
+.poke__types {
+    display: flex;
+    gap: 5px;
+    padding: 0;
+}
+
+.poke__card h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.slot1, .slot2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.slot2::before {
+    content: '/ ';
+}
+
+.poke__card p {
+    color: #434242;
+    font-size: 12px;
+}
+
+.poke__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px;
+    width: 85%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.stats--name{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: black;
+}
+
+.poke__stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Colores dinamicos de las cards */
+
+.grass {
+    background: linear-gradient(to bottom, #97D1C6, #B3DCBA, #C8E09C);
+}
+
+.grass__card {
+    border: 10px solid #97D1C6;
+}
+
+.grass__stat,
+.grass__name {
+    color: #97D1C6;
+}
+
+.fire {
+    background: linear-gradient(to bottom, #E75B31, #E46D23, #E68E1F);
+}
+
+.fire__card{
+    border: 10px solid #de683d
+}
+
+.fire__name,
+.fire__stat {
+    color: #de683d;
+}
+
+.normal {
+    background: linear-gradient(to bottom, #7B555D, #A0616F, #AD6675);
+}
+
+.normal__card {
+    border: 10px solid #7B555D
+}
+
+.normal__name,
+.normal__stat {
+    color: #7B555D;
+}
+
+.fighting {
+    background: linear-gradient(to bottom, #9D432B, #BE4E32, #C85234);
+}
+
+.fighting__card {
+    border: 10px solid #9D432B
+}
+
+.fighting__name,
+.fighting__stat {
+    color: #9D432B;
+}
+
+.flying {
+    background: linear-gradient(to bottom, #00bfff, #1b399a, #00d0ff);
+}
+
+.flying__card {
+    border: 10px solid #00bfff
+}
+
+.flying__name,
+.flying__stat {
+    color: #00bfff;
+}
+
+.poison {
+    background: linear-gradient(to bottom, #6F3F9D, #A162DF, #B57AEE);
+}
+
+.poison__card {
+    border: 10px solid #6F3F9D
+}
+
+.poison__name,
+.poison__stat {
+    color: #6F3F9D;
+}
+
+.ground {
+    background: linear-gradient(to bottom, #774E11, #9D6B22, #B07929);
+}
+
+.ground__card {
+    border: 10px solid #774E11
+}
+
+.ground__name,
+.ground__stat {
+    color: #774E11;
+}
+
+.rock {
+    background: linear-gradient(to bottom, #848486, #98989D, #ADADB1);
+}
+
+.rock__card {
+    border: 10px solid #848486
+}
+
+.rock__name,
+.rock__stat {
+    color: #848486;
+}
+
+.bug {
+    background: linear-gradient(to bottom, #42630c, #99e027, #7b9c45);
+}
+
+.bug__card {
+    border: 10px solid #42630c
+}
+
+.bug__name,
+.bug__stat {
+    color: #42630c;
+}
+
+.ghost {
+    background: linear-gradient(to bottom, #541a74, #ae3deb, #450f63);
+}
+
+.ghost__card {
+    border: 10px solid #541a74
+}
+
+.ghost__name,
+.ghost__stat {
+    color: #541a74;
+}
+
+.steel {
+    background: linear-gradient(to bottom, #687E77, #84928E, #8F9996);
+}
+
+.steel__card {
+    border: 10px solid #687E77
+}
+
+.steel__name,
+.steel__stat {
+    color: #687E77;
+}
+
+.water {
+    background: linear-gradient(to bottom, #145CB8, #1D7EFA, #2D86F9);
+}
+
+.water__card {
+    border: 10px solid #145CB8
+}
+
+.water__name,
+.water__stat {
+    color: #145CB8;
+}
+
+.electric {
+    background: linear-gradient(to bottom, #1A2198, #4046AE, #5055BC);
+}
+
+.electric__card {
+    border: 10px solid #1A2198
+}
+
+.electric__name,
+.electric__stat {
+    color: #1A2198;
+}
+
+.psychic {
+    background: linear-gradient(to bottom, #DC3535, #DD5656, #E26262);
+}
+
+.psychic__card {
+    border: 10px solid #DC3535
+}
+
+.psychic__name,
+.psychic__stat {
+    color: #DC3535;
+}
+
+.ice {
+    background: linear-gradient(to bottom, #6AC3E8, #83D6F8, #94DCFA);
+}
+
+.ice__card {
+    border: 10px solid #6AC3E8
+}
+
+.ice__name,
+.ice__stat {
+    color: #6AC3E8;
+}
+
+.dragon {
+    background: linear-gradient(to bottom, #4C939D, #6FACB5, #7FB2B9);
+}
+
+.dragon__card {
+    border: 10px solid #4C939D
+}
+
+.dragon__name,
+.dragon__stat {
+    color: #4C939D;
+}
+
+.dark {
+    background: linear-gradient(to bottom, #060A09, #1F2322, #2E3332);
+}
+
+.dark__card {
+    border: 10px solid #060A09
+}
+
+.dark__name,
+.dark__stat {
+    color: #060A09;
+}
+
+.fairy {
+    background: linear-gradient(to bottom, #A92753, #C64F78, #C85E82);
+}
+
+.fairy__card {
+    border: 10px solid #A92753
+}
+
+.fairy__name,
+.fairy__stat {
+    color: #A92753;
+}
+
+.unknow {
+    background: linear-gradient(to bottom, #4CAF50, #2ba962, #54d932);
+}
+
+.unknow__card {
+    border: 10px solid #4CAF50
+}
+
+.unknow__name,
+.unknow__stat {
+    color: #4CAF50;
+}
+
+.shadow {
+    background: linear-gradient(to bottom, #4CAF50, #2ba962, #54d932);
+}
+
+.shadow__card {
+    border: 10px solid #4CAF50
+}
+
+.shadow__name,
+.shadow__stat {
+    color: #4CAF50;
+}

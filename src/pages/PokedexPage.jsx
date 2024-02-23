@@ -65,7 +65,7 @@ const PokedexPage = () => {
           </section>
           <section className='section__blackHeader'></section>
         </div>
-        <h3><span className='page__h3'>Bienvenido {trainerName}, </span>Aqui podras encontrar tu pokemon favorito</h3>
+        <h3><span className='page__h3'>Bienvenido/a {trainerName}, </span>Aqui podras encontrar tu pokemon favorito</h3>
         <div className='div__forms'>
           <form onSubmit={handleSumbit}>
             <input
